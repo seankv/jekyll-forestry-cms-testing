@@ -32,12 +32,12 @@ sections:
   templates:
   - project
 - type: directory
-  path: _projects
-  label: Projects
+  path: _employees
+  label: Employees
   create: all
   match: "*"
   templates:
-  - project
+  - employee
 - type: document
   path: _data/information.yml
   label: Contact Information
