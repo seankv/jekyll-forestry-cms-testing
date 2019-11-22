@@ -8,8 +8,8 @@ fields:
 - name: first_name
   label: First Name
   type: text
-- name: first_name
-  label: First Name
+- name: last_name
+  label: Last Name
   type: text
 - name: slug
   label: Slug
@@ -19,13 +19,51 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: linkedin
-  label: Linkedin
+- name: phone
+  label: Phone
   type: text
   hidden: false
-  default: ''
-- name: layout
-  label: Layout
+- name: title
+  label: Title
   type: text
-  hidden: true
-  default: person
+  hidden: false
+- name: department
+  label: Department
+  type: select
+  hidden: false
+  config:
+    source:
+      type: custom
+    options: ["Technology", "Creative", "Operations", "Strategy", "Coffee"]
+- name: office
+  label: Office
+  type: text
+  hidden: false
+  config:
+    source:
+      type: custom
+    options: ["New York", "Mumbai", "Pyongyang"]
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  config:
+    source:
+      type: custom
+    options: ["Full-time", "Part-time", "Contractor", "Intern", "Interviewed this one time"]
+- name: status
+  label: Status
+  type: text
+  hidden: false
+  config:
+    source:
+      type: custom
+    options: ["Current Employee", "Former Employee", "Never actually an employee"]
+- name: photo
+  label: Photo
+  type: file
+  hidden: false
+- name: skills
+  label: Skills
+  type: tag_list
+  hidden: false
