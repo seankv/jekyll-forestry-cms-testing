@@ -11,6 +11,5 @@ type: ''
 status: ''
 photo: ''
 skills: []
-published: false
 
 ---
